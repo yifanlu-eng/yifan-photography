@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Yifan — Photography</title>
+  <meta name="description" content="Yifan — Photography portfolio. Street, Landscape, Portrait." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Header / Nav -->
+  <header class="container header">
+    <div class="brand">
+      <div class="logo" aria-hidden="true">Y</div>
+      <div>
+        <div class="name">Yifan</div>
+        <div class="tag">Photography</div>
+      </div>
+    </div>
+
+    <nav class="nav" aria-label="Primary">
+      <a href="#home">Home</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <main id="home">
+    <!-- Hero -->
+    <section class="container hero">
+      <h1>Yifan — Photography</h1>
+      <p>
+        A curated selection of my work across street, landscape, and portrait photography.
+      </p>
+      <div class="hero-actions">
+        <a class="btn" href="#gallery">Gallery</a>
+        <a class="btn ghost" href="#contact">Get in touch</a>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="container section">
+      <div class="section-head">
+        <h2>Gallery</h2>
+        <p>Browse by category.</p>
+      </div>
+
+      <!-- Category shortcuts (like your reference site) -->
+      <div class="filters" aria-label="Gallery categories">
+        <a class="chip is-active" href="#street">Street</a>
+        <a class="chip" href="#landscape">Landscape</a>
+        <a class="chip" href="#portrait">Portrait</a>
+      </div>
+
+      <!-- Street -->
+      <section id="street" class="subsection">
+        <div class="subhead">
+          <h3>Street</h3>
+          <p class="muted">Candid moments, rhythm, and everyday scenes.</p>
+        </div>
+        <div id="streetGrid" class="grid" aria-live="polite"></div>
+      </section>
+
+      <!-- Landscape -->
+      <section id="landscape" class="subsection">
+        <div class="subhead">
+          <h3>Landscape</h3>
+          <p class="muted">Light, scale, and atmosphere.</p>
+        </div>
+        <div id="landscapeGrid" class="grid" aria-live="polite"></div>
+      </section>
+
+      <!-- Portrait -->
+      <section id="portrait" class="subsection">
+        <div class="subhead">
+          <h3>Portrait</h3>
+          <p class="muted">Simple compositions and honest expressions.</p>
+        </div>
+        <div id="portraitGrid" class="grid" aria-live="polite"></div>
+      </section>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="container section about">
+      <div class="section-head">
+        <h2>About</h2>
+      </div>
+
+      <div class="about-card">
+        <div>
+          <p>
+            Hi, I’m <strong>Yifan</strong> — a photographer based in Perth, Western Australia.
+            I focus on street, landscape, and portrait photography, capturing light and mood in everyday life.
+          </p>
+          <p class="muted" style="margin-top:10px;">
+            Available for collaborations and commissioned shoots.
+          </p>
+        </div>
+
+        <div class="mini">
+          <div class="mini-row"><span>Based</span><span>Perth, WA</span></div>
+          <div class="mini-row"><span>Genres</span><span>Street • Landscape • Portrait</span></div>
+          <div class="mini-row"><span>Open to</span><span>Collabs • Commissions</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="container section">
+      <div class="section-head">
+        <h2>Contact</h2>
+        <p>For bookings, prints, or collaborations.</p>
+      </div>
+
+      <div class="contact-card">
+
+  <a class="contact-item" href="mailto:yourname@gmail.com">
+    <span>Email</span>
+    <span>luyifan030201@gmail.com</span>
+  </a>
+
+  <a class="contact-item" href="tel:+61412345678">
+    <span>Tel</span>
+    <span>+61 478 614 903</span>
+  </a>
+
+  <a class="contact-item" href="https://www.instagram.com/lucas_luu3/" target="_blank">
+  <span>Instagram</span>
+  <span>@lucas_luu3</span>
+</a>
+
+</div>
+    </section>
+  </main>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <button id="lbClose" class="lb-close" aria-label="Close preview">✕</button>
+    <img id="lbImg" alt="" />
+    <div class="lb-meta">
+      <div id="lbTitle" class="lb-title"></div>
+      <div id="lbDesc" class="lb-desc"></div>
+    </div>
+  </div>
+
+  <footer class="container footer">
+    <span class="muted">© <span id="year"></span> Yifan. All rights reserved.</span>
+    <span class="muted">Perth, Western Australia</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
