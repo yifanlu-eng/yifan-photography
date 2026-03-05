@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Yifan Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="container" style="display:flex;align-items:center;justify-content:space-between;gap:18px;">
+      <div class="brand">
+        <div class="logo">Y</div>
+        <div>
+          <div class="name">Yifan</div>
+          <div class="tag">Photography Portfolio</div>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Gallery</h1>
+        <p>Street / Landscape / Portrait</p>
+
+        <div class="filters">
+          <a class="chip is-active" href="#street">Street</a>
+          <a class="chip" href="#landscape">Landscape</a>
+          <a class="chip" href="#portrait">Portrait</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="section">
+      <div class="container">
+
+        <div id="street" class="subsection">
+          <div class="subhead">
+            <h3>Street</h3>
+            <p class="muted"></p>
+          </div>
+          <div id="streetGrid" class="grid"></div>
+        </div>
+
+        <div id="landscape" class="subsection">
+          <div class="subhead">
+            <h3>Landscape</h3>
+            <p class="muted"></p>
+          </div>
+          <div id="landscapeGrid" class="grid"></div>
+        </div>
+
+        <div id="portrait" class="subsection">
+          <div class="subhead">
+            <h3>Portrait</h3>
+            <p class="muted"></p>
+          </div>
+          <div id="portraitGrid" class="grid"></div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Contact</h2>
+          <p class="muted">Let’s connect</p>
+        </div>
+
+        <div class="contact-card">
+          <a class="contact-item" href="mailto:your@email.com">
+            <span>Email</span><span>luyifan030201@email.com</span>
+          </a>
+          <a class="contact-item" href="https://instagram.com/yourname" target="_blank" rel="noreferrer">
+            <span>Instagram</span><span>@lucas_luu3</span>
+          </a>
+          <div class="contact-item">
+            <span>Tele</span><span>+61 478 614 903</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container" style="display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;">
+        <div class="muted">© <span id="year"></span> Yifan</div>
+        <div class="muted">Built with HTML/CSS/JS</div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <button id="lbClose" class="lb-close" type="button" aria-label="Close">✕</button>
+    <img id="lbImg" alt="" />
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
